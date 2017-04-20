@@ -9,11 +9,11 @@
 		</id>
 		<property name="age"></property>
 		<property name="firstName" column="first_name"></property>
-		<property name="last_name" column="last_name"></property>
+		<property name="lastName" column="last_name"></property>
 		
 		<set name="events" table="person_event">
 			<key column="person_id"></key>
-			<many-to-many column="event_id" class="Emvent"></many-to-many>
+			<many-to-many column="event_id" class="Event"></many-to-many>
 		</set>
 	</class>
 </hibernate-mapping>
